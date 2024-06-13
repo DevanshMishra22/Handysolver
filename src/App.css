@@ -1,0 +1,313 @@
+/* Start button CSS */
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #000000;
+}
+
+.shine_button {
+  position: relative;
+  margin: 0;
+  padding: 17px 35px;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #d8eefc;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  color: #1d89ff;
+  font-weight: 400;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.shine_button span {
+  color: #164ca7;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.shine_button:hover {
+  animation: rotate624 0.7s ease-in-out both;
+}
+
+button:hover span {
+  animation: storm1261 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate624 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm1261 {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+.shine_button {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.shine_button span {
+  z-index: 20;
+}
+
+.shine_button:after {
+  background: #3980cd;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.4;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+.shine_button:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* Job number button css */
+.job_number_button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 2px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.job_number_button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.job_number_button:hover {
+  color: white;
+}
+
+.job_number_button:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.job_number_button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+/* Duplicate button css */
+.duplicate_btn {
+  --color: #f5ae51;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 2px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.duplicate_btn::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.duplicate_btn:hover {
+  color: white;
+}
+
+.duplicate_btn:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.duplicate_btn:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+/* JOB form container  */
+.job_form_conatiner {
+  width: 40%;
+  height: 110vh;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 247, 236);
+  border-radius: 5%;
+}
+
+.joblabel {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 6px;
+}
+.input_box {
+  margin: 6px;
+  padding: 2px;
+}
+.input_box input {
+  background-color: aliceblue;
+  height: 20px;
+  margin-left: 0px;
+  border-radius: 4px;
+}
+.input_box textarea {
+  background-color: aliceblue;
+  height: 50px;
+  width: 400px;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+}
+.heading_jobForm {
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  margin: 6px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+/* Preveiw css */
+.job_preview_container {
+  width: 50%;
+  border-radius: 4%;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 6px;
+  padding-left: 15px;
+  height: auto;
+  color: #ffffff;
+  background-color: rgb(25, 67, 107);
+}
+
+.tags_container {
+  display: flex;
+  align-items: center;
+}
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 170px;
+  border-radius: 30%;
+  background-color: #bdd4ed;
+  color: #000000;
+  margin-left: 3px;
+}
+.header {
+  display: flex;
+}
+.preview_item {
+  display: flex;
+}
+/* Basic css of whole page  */
+.bigconatiner {
+  display: flex;
+  border-radius: 5%;
+}
+
+.Containerapp {
+  display: flex;
+  width: 100%;
+}
+.previewconatiner {
+  width: 40%;
+  flex-wrap: wrap;
+}
+.hello {
+  display: flex;
+  width: 90%;
+}
+.button_container {
+  width: 16%;
+}
+
+.preveiw_data {
+  display: flex;
+  align-items: center;
+}
+.heading_jobPreview {
+  display: flex;
+  justify-content: center;
+}
